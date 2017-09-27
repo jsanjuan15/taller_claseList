@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Taller_claseList</string>
+    <string name="agregar">AGREGAR</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="limpiar">LIMPIAR</string>
+    <string name="precio">PRECIO</string>
+    <string name="capacidadRam">Capacidad</string>
+    <string name="listar">Listar</string>
+    <string name="precios">Precios</string>
+    <string name="numero">Numero</string>
+    <string name="capacidades">Capacidad</string>
+    <string name="color">Color</string>
+    <string name="titulo2">Listado de celular</string>
+
+    <string-array name="Listar">
+        <item>@string/samsung</item>
+        <item>@string/android</item>
+        <item>@string/nokia</item>
+    </string-array>
+    <string-array name="color">
+        <item>@string/negro</item>
+        <item>@string/blanco</item>
+
+    </string-array>
+
+    <string name="confirmacion">celular Guardado Exitosamente!</string>
+    <string name="android">Android</string>
+    <string name="samsung">Samsung</string>
+    <string name="apple">Apple</string>
+    <string name="nokia">Nokia</string>
+    <string name="negro">Negro</string>
+    <string name="blanco">Blanco</string>
+    <string name="huawei">Huewei</string>
+</resources>
