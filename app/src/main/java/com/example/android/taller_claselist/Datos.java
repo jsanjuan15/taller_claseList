@@ -9,8 +9,7 @@ import java.util.ArrayList;
 public class Datos {
     private static ArrayList<Celular> base= new ArrayList();
 
-    public static void guardar(Celular p ){
-        base.add(p);
+    public static void guardar(Celular p ){ base.add(p);
     }
 
     public static ArrayList<Celular> obtener(){

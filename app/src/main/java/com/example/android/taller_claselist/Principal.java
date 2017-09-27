@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Spinner;
+
+import java.util.List;
 
 public class Principal extends AppCompatActivity {
     private ListView lv;
@@ -15,6 +18,8 @@ public class Principal extends AppCompatActivity {
     private String op[];
     private Intent i;
     private Resources resources;
+    private Spinner color;
+    private Spinner marca;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +32,7 @@ public class Principal extends AppCompatActivity {
         op=res.getStringArray(R.array.Listar);
         ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,op);
         lv.setAdapter(adapter);
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,color);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, (List<String>) color);
         color.setAdapter(adapter1);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

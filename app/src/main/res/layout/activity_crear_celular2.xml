@@ -64,6 +64,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
+            <Spinner
+                android:id="@+id/sistema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"

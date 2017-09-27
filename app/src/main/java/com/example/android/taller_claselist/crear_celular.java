@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class crear_celular extends AppCompatActivity {
 
+    private Spinner   Spinersistema;
     private Spinner   SpinerMarca;
     private EditText cajaPrecio,cajaCapacidad;
     private Resources res;
@@ -21,19 +22,20 @@ public class crear_celular extends AppCompatActivity {
         cajaPrecio=(EditText) findViewById(R.id.txtPrecio);
         cajaCapacidad=(EditText) findViewById(R.id.txtCapacidad);
         SpinerMarca=(Spinner) findViewById(R.id.Marca);
+        Spinersistema=(Spinner) findViewById(R.id.sistema);
         res=this.getResources();
 
     }
 
     public void guardar(View v){
 
-        String  precio,Marca,capacidad;
+        String  precio,Marca,capacidad,sistema);
         precio=cajaPrecio.getText().toString().trim();
         capacidad=cajaCapacidad.getText().toString().trim();
-        Marca=Integer.parseInt(SpinerMarca.getText().toString().trim());
+        Marca=(SpinerMarca.getSelectedItem().toString().trim());
 
-        Celular p = new Celular(precio,capacidad,Marca);
-        p.guardar();
+        Celular p = new Celular(precio,capacidad,Marca,sistema);
+        p.guardar;
         Toast.makeText(this,res.getString(R.string.confirmacion), Toast.LENGTH_SHORT).show();
 
     }
